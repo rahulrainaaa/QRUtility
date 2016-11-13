@@ -151,17 +151,6 @@ public class QRGen extends AppCompatActivity {
      */
     private void scanQR() {
 
-
-        try {
-            //start the scanning activity from the com.google.zxing.client.android.SCAN intent
-            Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-            //  Intent intent = new Intent();
-            intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-            startActivityForResult(intent, 0);
-        } catch (Exception e) {
-            //on catch, show the download dialog
-            Toast.makeText(this, "" + e.getMessage(), Toast.LENGTH_LONG).show();
-        }
+        startActivity(new Intent(this, QRScan.class));
     }
-
 }
