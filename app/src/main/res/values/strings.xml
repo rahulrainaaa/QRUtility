@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QRUtility</string>
+    <string name="title_activity_qrgen">QRGen</string>
+</resources>
